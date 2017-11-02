@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="自从买了Mac后，似乎正如有人说的那样，使用linux的人最终都投入了mac阵营，加之越来越看不到Ubuntu的进步，在我的Thinkpad上发热明显，集成显卡不支持外界显示器，使用了独立显卡，发热更是无法忍受，在其他一些细节上，比如rime无法输入简体中文，eamcs的版本还是24.3，连24.5默认支持的一键全屏也不可用，所以用得越来越少了。今天头疼办公室的电脑默认总是要进入ubuntu 17">
+<meta name="description" content="read Learn Vimscript the hard way Practical Vim  windows 格式的*.vim 迁移到unix在ubuntu下使用以前的配置文件，行尾多了^M 12sudo apt install dosx2unixdos2unix ~\.vimrc 但问题是vimfiles下的bundle有成百上千个.vim文件，这些文件不是我自己的 man dos2unix">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ubuntu">
-<meta property="og:url" content="http://yoursite.com/2017/05/04/ubuntu/index.html">
+<meta property="og:title" content="vim">
+<meta property="og:url" content="http://yoursite.com/2016/10/29/vim/index.html">
 <meta property="og:site_name" content="宋波的博客">
-<meta property="og:description" content="自从买了Mac后，似乎正如有人说的那样，使用linux的人最终都投入了mac阵营，加之越来越看不到Ubuntu的进步，在我的Thinkpad上发热明显，集成显卡不支持外界显示器，使用了独立显卡，发热更是无法忍受，在其他一些细节上，比如rime无法输入简体中文，eamcs的版本还是24.3，连24.5默认支持的一键全屏也不可用，所以用得越来越少了。今天头疼办公室的电脑默认总是要进入ubuntu 17">
+<meta property="og:description" content="read Learn Vimscript the hard way Practical Vim  windows 格式的*.vim 迁移到unix在ubuntu下使用以前的配置文件，行尾多了^M 12sudo apt install dosx2unixdos2unix ~\.vimrc 但问题是vimfiles下的bundle有成百上千个.vim文件，这些文件不是我自己的 man dos2unix">
 <meta property="og:locale" content="zh_cn">
-<meta property="og:updated_time" content="2017-05-04T15:08:04.000Z">
+<meta property="og:updated_time" content="2016-12-04T08:02:26.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ubuntu">
-<meta name="twitter:description" content="自从买了Mac后，似乎正如有人说的那样，使用linux的人最终都投入了mac阵营，加之越来越看不到Ubuntu的进步，在我的Thinkpad上发热明显，集成显卡不支持外界显示器，使用了独立显卡，发热更是无法忍受，在其他一些细节上，比如rime无法输入简体中文，eamcs的版本还是24.3，连24.5默认支持的一键全屏也不可用，所以用得越来越少了。今天头疼办公室的电脑默认总是要进入ubuntu 17">
+<meta name="twitter:title" content="vim">
+<meta name="twitter:description" content="read Learn Vimscript the hard way Practical Vim  windows 格式的*.vim 迁移到unix在ubuntu下使用以前的配置文件，行尾多了^M 12sudo apt install dosx2unixdos2unix ~\.vimrc 但问题是vimfiles下的bundle有成百上千个.vim文件，这些文件不是我自己的 man dos2unix">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/05/04/ubuntu/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/10/29/vim/"/>
 
 
 
 
 
-  <title>ubuntu | 宋波的博客</title>
+  <title>vim | 宋波的博客</title>
   
 
 
@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/04/ubuntu/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/10/29/vim/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="宋波">
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">ubuntu</h1>
+          <h1 class="post-title" itemprop="name headline">vim</h1>
         
 
         <div class="post-meta">
@@ -261,8 +261,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-04T22:03:22+08:00">
-                2017-05-04
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-10-29T10:47:23+08:00">
+                2016-10-29
               </time>
             
 
@@ -299,9 +299,27 @@
       
 
       
-        <p>自从买了Mac后，似乎正如有人说的那样，使用linux的人最终都投入了mac阵营，加之越来越看不到Ubuntu的进步，在我的Thinkpad上发热明显，集成显卡不支持外界显示器，使用了独立显卡，发热更是无法忍受，在其他一些细节上，比如rime无法输入简体中文，eamcs的版本还是24.3，连24.5默认支持的一键全屏也不可用，所以用得越来越少了。今天头疼办公室的电脑默认总是要进入ubuntu 17.04，研究下了grub</p>
-<h2 id="grub-默认启动的操作系统"><a href="#grub-默认启动的操作系统" class="headerlink" title="grub 默认启动的操作系统"></a>grub 默认启动的操作系统</h2><figure class="highlight plain"><figcaption><span>vi</span><a href="/etc/default/grub">link</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">update-grub</div></pre></td></tr></table></figure>
-<p>修改配置文件中的default menuentry的值，默认是0，改为5启动windows，改为saved可以记住上一次启动的操作系统。</p>
+        <h2 id="read"><a href="#read" class="headerlink" title="read"></a>read</h2><ol>
+<li>Learn Vimscript the hard way</li>
+<li>Practical Vim</li>
+</ol>
+<h2 id="windows-格式的-vim-迁移到unix"><a href="#windows-格式的-vim-迁移到unix" class="headerlink" title="windows 格式的*.vim 迁移到unix"></a>windows 格式的*.vim 迁移到unix</h2><p>在ubuntu下使用以前的配置文件，行尾多了^M</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt install dosx2unix</div><div class="line">dos2unix ~\.vimrc</div></pre></td></tr></table></figure>
+<p>但问题是vimfiles下的bundle有成百上千个.vim文件，这些文件不是我自己的</p>
+<p><code>man dos2unix</code></p>
+<p>最后有recursive转换的例子</p>
+<p><code>find ~/Dropbox/doc/vim/vimfiles/ -name *.vim |xargs dos2unix</code></p>
+<h2 id="How-to-do-90-of-What-Plugins-Do-with-Just-Vim"><a href="#How-to-do-90-of-What-Plugins-Do-with-Just-Vim" class="headerlink" title="How to do 90% of What Plugins Do (with Just Vim)"></a>How to do 90% of What Plugins Do (with Just Vim)</h2><p>“”  FINDING FILES:<br>“” search down into subfolds<br>set path+=<em>*<br> “” 一个</em>可以匹配零个或多个字符，但是范围尽在指定的文件夹，而两个*能recurse downward into directories below the specified directory :h starstar-wildchard</p>
+<h2 id="source-current-file"><a href="#source-current-file" class="headerlink" title="source current file"></a>source current file</h2><p>不重启vim让配置文件生效<br><code>:h current-file</code><br>current-file 是 _%</p>
+<h2 id="编辑多个文件"><a href="#编辑多个文件" class="headerlink" title="编辑多个文件"></a>编辑多个文件</h2><p>:buffer<br>:ls<br>show all buffers<br>goto a buffer with <code>:buffer N or N C-^</code></p>
+<p>：ls 可以gives us a listing of all the buffers that have been load into memory,we can quickly toggle between the current(%) and alternate(#) file by pressing <c-^></c-^></p>
+<h3 id="Use-the-Buffer-List"><a href="#Use-the-Buffer-List" class="headerlink" title="Use the Buffer List"></a>Use the Buffer List</h3><p>traverse the buffer list :bprev :bnext :bfirst :blast<br>Deleting buffers :bdelete N1 N2 N3<br>:N, M bdelete</p>
+<h3 id="Group-buffers-into-a-collection-with-the-argument-list"><a href="#Group-buffers-into-a-collection-with-the-argument-list" class="headerlink" title="Group buffers into a collection with the argument list"></a>Group buffers into a collection with the argument list</h3><h2 id="Save-a-file-as-the-super-user"><a href="#Save-a-file-as-the-super-user" class="headerlink" title="Save a file as the super user"></a>Save a file as the super user</h2><p>:w !sudo tee</p>
+<p>参看pv P108</p>
+<h2 id="key-notation"><a href="#key-notation" class="headerlink" title="key-notation"></a>key-notation</h2><figure class="highlight plain"><figcaption><span><f2> a<c-r></c-r></f2></span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">what does &lt;C-R&gt; mean?</div><div class="line"></div><div class="line">&lt;c-r&gt; is like doing Ctrl+r &lt;CR&gt; is like hitting enter,you can find the tull list by doing  ```:help key-notation</div></pre></td></tr></table></figure>
+<p>参考：[<a href="http://stackoverflow.com/questions/10862457/what-does-c-r-means-in-vim" target="_blank" rel="external">http://stackoverflow.com/questions/10862457/what-does-c-r-means-in-vim</a>]</p>
+<p><c-r>=, or Ctrl+R= is used to insert the result of an expression at the cursor.<br>without <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">```&lt;c-r&gt;+``` inserts the content of system clipboard :help i_ctrl_r</div><div class="line">```=``` is the &quot;expression register&quot; See ``` :help &quot;=</div></pre></td></tr></table></figure></c-r></p>
+<h3 id="mark"><a href="#mark" class="headerlink" title="mark"></a>mark</h3><p>A mark is set to any cursor location using the m command.<br>用m命令加上一个字母可以在光标处做一个标记<br>然后用singgle quote 加字母可以返回这个所在的行首<br>用back quote可以返回标记处.</p>
 
       
     </div>
@@ -326,8 +344,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/02/27/jp/" rel="next" title="jp">
-                <i class="fa fa-chevron-left"></i> jp
+              <a href="/2016/10/08/Excel/" rel="next" title="Excel练习补充说明.md">
+                <i class="fa fa-chevron-left"></i> Excel练习补充说明.md
               </a>
             
           </div>
@@ -336,8 +354,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/10/21/Pop/" rel="prev" title="Pop!_OS 17.10">
-                Pop!_OS 17.10 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/11/10/emacs/" rel="prev" title="emacs">
+                emacs <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -458,7 +476,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#grub-默认启动的操作系统"><span class="nav-number">1.</span> <span class="nav-text">grub 默认启动的操作系统</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#read"><span class="nav-number">1.</span> <span class="nav-text">read</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#windows-格式的-vim-迁移到unix"><span class="nav-number">2.</span> <span class="nav-text">windows 格式的*.vim 迁移到unix</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#How-to-do-90-of-What-Plugins-Do-with-Just-Vim"><span class="nav-number">3.</span> <span class="nav-text">How to do 90% of What Plugins Do (with Just Vim)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#source-current-file"><span class="nav-number">4.</span> <span class="nav-text">source current file</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编辑多个文件"><span class="nav-number">5.</span> <span class="nav-text">编辑多个文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Use-the-Buffer-List"><span class="nav-number">5.1.</span> <span class="nav-text">Use the Buffer List</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Group-buffers-into-a-collection-with-the-argument-list"><span class="nav-number">5.2.</span> <span class="nav-text">Group buffers into a collection with the argument list</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Save-a-file-as-the-super-user"><span class="nav-number">6.</span> <span class="nav-text">Save a file as the super user</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#key-notation"><span class="nav-number">7.</span> <span class="nav-text">key-notation</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#mark"><span class="nav-number">7.1.</span> <span class="nav-text">mark</span></a></li></ol></li></ol></div>
             
 
           </div>
